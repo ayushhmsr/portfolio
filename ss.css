@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    background-color: #007f73;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 2rem 5%;
+    transition: all 0.5s ease;
+}
+header a{
+    color: white;
+    text-decoration: none;  
+}
+#click{
+    display: none;
+}
+.navbar a{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.logo{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: rem;
+}
+.logo:hover{
+    transform: scale(1.05);
+}
+.navbar a:hover,
+.navbar a:active{
+    color: #000;
+}
+#menu-icon{
+    font-size: 3rem;
+    display: none;
+    align-items: center;
+}
+.information{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+    
+}
+.info{
+    display: flex;
+}
+.about{
+    margin-top: 4%;
+}
+.about h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    font-weight: 700;
+}
+.about p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    
+}
+.about #iam{
+    color: #007f73;
+}
+.name{
+    color: #007f73;
+}
+.pic img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin-top: 8%;
+    margin-left: 0%;
+    margin-right: -100%;
+}
+h5{
+    margin-top: 3%;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.hobby{
+    color: #007f73;
+}
+ul{
+    margin-top: 3%;
+    text-decoration: none;
+    margin-left: 5%;
+}
+ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.body{
+    margin-top: 10%;
+}
+.hello{
+    text-align: center;
+    font-size: 150%;
+}
+.tech{
+    color: #007f73;
+}
+.js img{
+    width: 40%;
+    height: 70%;
+    border: #000 solid 1px;
+    margin-left: 4vw;
+}
+.css img{
+    width: 50%;
+    height: 70%;
+    border: #007f73 solid 1px;
+    margin-left: 15vw;
+}
+.html img{
+    width: 80%;
+    height: 70%;
+    border: #007f73 solid 1px;
+    margin-left: 15vw;
+}
+.skill{
+    display: flex;
+    margin: 4%;
+}
+
+@media (300px<=width<=600px){
+    *{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y:visible;
+    }
+    #menu-icon{
+        display: block ;
+        font-size: 2rem;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #007f73;
+        top: 10%;
+        left: -100%;
+        transition: 0.3s ease;
+        width: 100%;
+    }
+    .logo{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: rem;
+    }
+    #click:checked ~ .navbar{
+        left: 0;
+    }
+    #click{
+        display: none   ;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .information{
+        margin-left: 10px;
+        margin-right: 2vw;
+    }
+    .info p{
+        font-size: 1.2rem;
+        margin-left: 3vw;
+    }
+    .info h1{
+        font-size: 2rem;
+        margin-left:25vw;
+    }
+    .about ul{
+        margin-bottom: 30px;
+        margin-left: 10vw;
+    }
+    .about h5{
+        margin-left: 3vw;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+
+
+}

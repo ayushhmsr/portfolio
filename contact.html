@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">XYZ.</a>
+        <input type="checkbox" id="click">
+        <label for="click">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="contact">
+        <h1>Contact Me.</h1>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" required>
+                <label>Name</label>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <textarea name="message" required></textarea>
+                <label>Message</label>
+            </div>
+            <div class="input-box">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
